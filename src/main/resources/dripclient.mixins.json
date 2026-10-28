@@ -4,11 +4,7 @@
   "package": "com.example.dripclient.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "BlockMixin",
     "ClientPlayerEntityMixin",
-    "ClientWorldMixin",
-    "GameRendererAccessor",
-    "GameRendererMixin",
     "LivingEntityAccessor",
     "MinecraftClientAccessor"
   ],

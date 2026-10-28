@@ -21,13 +21,11 @@ import com.example.dripclient.modules.NoJumpDelayModule;
 import com.example.dripclient.modules.NoPushModule;
 import com.example.dripclient.modules.NoSignGuiModule;
 import com.example.dripclient.modules.PuddlesModule;
-import com.example.dripclient.modules.SkyModule;
 import com.example.dripclient.modules.StarsModule;
 import com.example.dripclient.modules.SprintModule;
 import com.example.dripclient.modules.TracerModule;
 import com.example.dripclient.modules.TriggerBotModule;
 import com.example.dripclient.modules.VisualsModule;
-import com.example.dripclient.modules.XrayModule;
 import net.fabricmc.loader.api.FabricLoader;
 
 import java.io.IOException;
@@ -56,11 +54,9 @@ public final class ModuleManager {
         MODULES.add(new EspModule());
         MODULES.add(new ItemEspModule());
         MODULES.add(new BlockEspModule());
-        MODULES.add(new XrayModule());
         MODULES.add(new FullbrightModule());
         MODULES.add(new FreecamModule());
         MODULES.add(new VisualsModule());
-        MODULES.add(new SkyModule());
         MODULES.add(new StarsModule());
         MODULES.add(new PuddlesModule());
         MODULES.add(new HudModule());

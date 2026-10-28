@@ -1,6 +1,5 @@
 package com.example.dripclient;
 
-import com.example.dripclient.mixin.GameRendererAccessor;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.render.Camera;
@@ -56,12 +55,6 @@ public final class Projection {
         aspect = W / H;
 
         double fov = mc.options.getFov().getValue();
-        try {
-            if ((Object) mc.gameRenderer instanceof GameRendererAccessor acc) {
-                fov = acc.dripclient$getFov(cam, delta, true);
-            }
-        } catch (Throwable ignored) {
-        }
         tanHalf = Math.tan(Math.toRadians(fov) / 2.0);
     }
 

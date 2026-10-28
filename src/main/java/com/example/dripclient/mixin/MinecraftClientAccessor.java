@@ -7,8 +7,5 @@ import org.spongepowered.asm.mixin.gen.Accessor;
 @Mixin(MinecraftClient.class)
 public interface MinecraftClientAccessor {
     @Accessor("itemUseCooldown")
-    int dripclient$getItemUseCooldown();
-
-    @Accessor("itemUseCooldown")
     void dripclient$setItemUseCooldown(int value);
 }
